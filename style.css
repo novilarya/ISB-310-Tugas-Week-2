@@ -1,0 +1,194 @@
+body {
+    background-color: #4D83AA;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #E2D800;
+    padding: 20px 20px 10px 20px; /* Menambah padding atas (20px) agar titik-titik punya ruang */
+    box-sizing: border-box;
+    border-bottom: 2px solid #ccc;
+    
+    /* Implementasi "Upperline" Dotted */
+    border-top: 10px dotted #4D83AA; /* Warna biru background agar terlihat seperti lubang */
+}
+
+.container {
+    width: 800px;
+    overflow: hidden;
+}
+
+.main-content {
+    display: flex;
+    align-items: flex-start; 
+    width: 100%;
+
+}
+
+.sidebar {
+    width: 300px;
+    height: 250px;
+    background-color: #ffffff;
+    padding: 15px;
+    box-sizing: border-box;
+    /* Memberikan jeda antara garis vertikal dengan konten kanan */
+    border-right: 3px dotted #032152; 
+    border-bottom-left-radius: 15px;
+}
+
+.content {
+    width: 500px;
+    height: 600px;
+    background-color: #ffffff;
+    padding: 20px 30px; /* 30px padding kiri-kanan memberikan jeda dari garis */
+    box-sizing: border-box;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.sidebar h2 {
+    color: #032152;
+    margin: 0; /* Hapus margin-right negatif */
+    padding-bottom: 5px;
+    border-bottom: 3px dotted #032152;
+    font-size: 1.2rem;
+}
+
+.sidebar .search-box h2 {
+    margin-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 20px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #4D83AA; 
+}
+
+.content-2 {
+    width: 800px;
+    height: 600px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.table-container {
+    background-color: #9CBCD0; /* Warna latar belakang tabel */
+    /* POIN 1: Border hanya atas dan bawah */
+    border-top: 3px solid #032152; 
+    border-bottom: 3px solid #032152;
+    
+    /* POIN 2: Padding 1px untuk memberi efek bingkai tipis di sisi lain */
+    padding: 0 3px 3px 3px; 
+    
+    border-radius: 0; /* Menghilangkan radius agar sesuai dengan garis lurus di gambar */
+    overflow: hidden;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white; /* Teks angka/huruf berwarna putih */
+    text-align: center;
+}
+
+th {
+    /* Header tabel dengan warna teks biru tua */
+    padding: 15px 10px;
+    font-weight: bold;
+    color: #032152;
+}
+
+td {
+    padding: 12px;
+    font-size: 16px;
+}
+
+/* POIN 3: Kotak Footer Putih */
+.table-footer {
+    background-color: #ffffff; /* Kotak putih di bagian bawah */
+    color: #032152;
+    text-align: center; /* Tulisan di tengah */
+    padding: 10px;
+    font-size: 14px;
+    /* Memberikan garis pemisah antara isi tabel dan footer */
+}
+
+/* Container khusus konten soal 2 */
+.content-2 {
+    width: 800px;
+    min-height: 500px; /* Sesuai instruksi minimal 500px */
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Mengetengahkan form secara horizontal */
+}
+
+.form-table {
+    width: 500px; /* Sesuai instruksi gambar 500px */
+    border-collapse: separate;
+    border-spacing: 5px; /* Memberikan celah antar kotak */
+    color: #21678A;
+}
+
+.form-table td {
+    background-color: #C0E8FB;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Kolom Label (Kiri) */
+.label-col {
+    text-align: right;
+    width: 40%;
+    padding-right: 20px !important;
+}
+
+/* Kolom Input (Kanan) */
+.input-col {
+    width: 60%;
+    padding-left: 20px !important;
+}
+
+/* Kotak input di dalam sel */
+.inner-input {
+    background-color: #ffffff;
+    border: 2px dotted #21678A;
+    border-radius: 10px;
+    padding: 5px 10px 5px 25px; /* Padding kiri lebih besar sesuai permintaan */
+    display: block;
+    color: #ccc;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+/* Baris ke-4 dan ke-5 */
+.full-width {
+    text-align: right;
+    padding-right: 30px !important;
+}
+
+.btn-submit {
+    background-color: #7DA6B3;
+    color: white;
+    border: none;
+    padding: 8px 25px; /* Padding kanan-kiri lebih besar */
+    border-radius: 5px;
+    cursor: pointer;
+}
