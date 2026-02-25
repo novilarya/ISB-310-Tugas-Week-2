@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis-Week 3-Soal1</title>
+</head>
+<body>
+    <button type="button" onclick="clickCounter()">Click Me!</button>
+    <p id="teks"> You have clicked the button <span id="counter">0</span> times(s) in this session.</p>
+    <p>Click the button to see the counter increase.</p>
+    <p>Close the browser tab (or window), and try again, and the count is reset.</p>
+
+    <script>
+        let angka = parseInt(localStorage.getItem("angka_tersimpan")) || 0;
+        document.getElementById("counter").innerHTML = angka;
+
+        function clickCounter() {
+            angka += 1;            
+            document.getElementById("counter").innerHTML = angka;
+            localStorage.setItem("angka_tersimpan", angka);
+        }
+    </script>
+    
+    <!--Saya mengerjakan tugas ini sendiri tanpa melakukan kecurangan seperti menggunakan, menduplikasi kode program yang ada.
+    Jika saya melakukan kecurangan dalam pengerjaan tugas ini, maka saya siap menerima sanksi atau hukuman dari dari dosen mata kuliah dan Tuhan/Allah SWT-->
+    
+</body>
+</html>
